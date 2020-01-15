@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+<body data-spy="scroll" data-target="#menu">
+<!--Start Home Section-->
+<div id = "home">
+    <!--    Navigation-->
+    <nav class = "navbar navbar-dark navbar-expand-lg navbar-fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">KB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class = "nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class="nav-link" href="#testimonials">Portfolio</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--End Home Section-->
+
+<!--Start Landing Page-->
+<div class = "landing">
+    <div class = "home-wrap">
+        <div class="home-inner">
+
+        </div>
+    </div>
+</div>
+<!--Start Caption-->
+<div class="caption center-block text-center">
+    <h3>Welcome to <strong>Kush Bhatt's</strong> Website</h3>
+    <p>I am a Software Engineering Masters student at the University of Calgary<br> with a passion for software
+        development and machine learning.<br> Connect with me on LinkedIn or check out my GITHUB profile using the icons below!</p>
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/kush-bhatt/" class="fab fa-linkedin"></a>
+        </li>
+        <li>
+            <a href="https://github.com/KushBhatt96" class="fab fa-github"></a>
+        </li>
+    </ul>
+    <a class="btn btn-outline-light" href="#about">About Me</a>
+</div>
+<!--End Landing Page-->
+<!--Start About Section-->
+<div id="about">
+    <div class="jumbotron">
+        <h3 class="heading">About</h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 text-center">
+                <img src="https://avatars3.githubusercontent.com/u/57189640?s=460&v=4">
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <h4>Introduction</h4>
+                <p>Hello! My name is Kush and I am a Software Engineering Masters Student at the University of Calgary. I am passionate
+                    about software development and the applications of machine learning. I have demonstrated
+                    this through various projects which can be found in the portfolio section. In addition to my program at University, I have also taken several courses
+                    online out of my own interest. I am eager to learn and always finding ways to expand my knowledge.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <h4>Education</h4>
+                <li><strong>Master of Software Engineering at the U of C</strong></li>
+                <p><strong>Courses:</strong> Principles of Software Development, Software Design and Architecture, Data
+                    Engineering, Large-Scale Analytics Systems, Machine Learning, Databases, Requirements Analysis, Capstone</p>
+
+                <li><strong>BSc in Chemical Engineering at the U of C</strong></li>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--End About Section-->
+
+<!--Start Portfolio Section-->
+<div id="portfolio">
+    <div class="container padding">
+        <h3 class="heading">Technologies</h3>
+        <div class="row no-padding">
+            <div class="col-lg-3 col-md-6">
+                <img class="portfolio" src="JS.png">
+            </div>
+            <div class="col-lg-3  col-md-6">
+                <img class="portfolio" src="HTML.png">
+            </div>
+            <div class="col-lg-3  col-md-6">
+                <img class="portfolio" src="CSS.png">
+            </div>
+            <div class="col-lg-3  col-md-6">
+                <img class="portfolio" src="NODEJS.png">
+            </div>
+            <div class="col-lg-3  col-md-6">
+                <img class="portfolio" src="JAVA.jpg">
+            </div>
+            <div class="col-lg-3  col-md-6">
+                <img class="portfolio" src="Python.png">
+            </div>
+            <div class="col-lg-3  col-md-6">
+                <img class="portfolio" src="Cplusplus.png">
+            </div>
+            <div class="col-lg-3  col-md-6">
+                <img class="portfolio" src="MySQL.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Portfolio Section-->
+
+<!--Start Testimonials Section-->
+<div id="testimonials">
+    <h3 class="heading">Portfolio</h3>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="ClientMgmt.JPG">
+                <div class="card-body">
+                    <h4>Client Management System MVC JDBC</h4>
+                    <p>This program is a basic client management system built using Java Swing.
+                        It is programmed using the MVC design pattern and also connects to a database via JDBC.
+                    </p>
+                    <a class="btn btn-info" href="https://github.com/KushBhatt96/Client-Management-System-MVC-JDBC-">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="CNN.PNG">
+                <div class="card-body">
+                    <h4>Animal Image Classifier</h4>
+                    <p>The model is able to look at images and determine whether the image is of a dog or a cat.
+                        It consists of a convolutional neural network created from Keras with a TensorFlow backend.</p>
+                    <a class="btn btn-info" href="https://github.com/KushBhatt96/Animal-Image-Classifier-CNN">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="YELPCAMP.PNG">
+                <div class="card-body">
+                    <h4>YelpCamp Website</h4>
+                    <p>Website made with Javascript, HTML, CSS, Bootstrap, Express, and MongoDB.</p>
+                    <a class="btn btn-info" href="https://pure-caverns-08955.herokuapp.com/">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="SENT.png">
+                <div class="card-body">
+                    <h4>Sentiment Analysis on Restaurant Reviews</h4>
+                    <p>This jupyter notebook uses various libraries including numpy, pandas, matplotlib, sklearn, and nltk in order
+                        to determine the sentiment of a restaurant review. The notebook includes text cleaning, creating a bag of words model,
+                        and then finally fitting the Naive Bayes Classifier to the data of 1000 reviews with a 73% accuracy.
+                        Additionally, users can check the predictions on their own review.</p>
+                    <a class="btn btn-info" href="https://github.com/KushBhatt96/Sentiment-Analysis-Restaurant-Reviews">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="Anagram.png">
+                <div class="card-body">
+                    <h4>Anagram Finder</h4>
+                    <p>This program takes in a list of words, finds and outputs all of the anagrams (different words with the exact same letters).
+                        This program utilizes bubble sort, insertion sort with Linked-Lists, and quick sort. </p>
+                    <a class="btn btn-info" href="https://github.com/KushBhatt96/Anagram-Finder-Sorting-Algorithms">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="STOCK.PNG">
+                <div class="card-body">
+                    <h4>Stock Trend Predictor</h4>
+                    <p>This model was trained on 5 years of historical stock market data using an LSTM recurrent
+                        neural network. Using this data, it is able to determine the likely future trends of the stock.</p>
+                    <a class="btn btn-info" href="https://github.com/KushBhatt96/Stock-Trend-Predictor-RNN">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--End Testimonials Section-->
+
+
+<!--Start Contact Section-->
+<div id="contact">
+    <div class="container">
+        <h3 class="heading">Contact</h3>
+        <form action="send" method="POST">
+            <div class="form-group">
+                <label for="exampleInputName1">Name</label>
+                <input type="text" name="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email Address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+                <small id="emailHelp" class="form-text text-muted">Your email will not be shared with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+<!--End Contact Section-->
+<!--Script Source Files-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
