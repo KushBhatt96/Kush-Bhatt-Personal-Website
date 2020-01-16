@@ -8,10 +8,17 @@ require('dotenv').config();
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use(helmet.contentSecurityPolicy({
+    directives: {
+        styleSrc: ["'self'", 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 'https://use.fontawesome.com/releases/v5.11.2/css/all.css'],
+        scriptSrc: ["'self'", 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', 'https://code.jquery.com/jquery-3.4.1.slim.min.js']
+    }
+}));
 app.use(helmet.hsts());
 app.use(helmet.noCache());
 app.use(helmet.frameguard());
 app.use(helmet.noSniff());
+app.use(helmet.referrerPolicy({policy: 'same-origin'}));
 
 //Body Parser Middleware
 app.use(bodyParser.json());
