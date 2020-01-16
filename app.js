@@ -2,17 +2,20 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const helmet = require("helmet");
 require('dotenv').config();
 
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use(helmet.hsts());
+app.use(helmet.noCache());
+app.use(helmet.frameguard());
+app.use(helmet.noSniff());
 
 //Body Parser Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-
-
 
 app.get("/", function(req, res){
     res.render("index");
